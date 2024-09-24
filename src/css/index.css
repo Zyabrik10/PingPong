@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    overflow: hidden;
+
+    color: aliceblue;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.scores{
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    color: aliceblue;
+
+    display: flex;
+    align-items: center;
+
+    font-size:24px;
+}
+
+canvas{
+    background: #000;
+}
+
+.screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+
+    z-index: 100;
+}
+
+.screen.hidden{
+    display: none;
+}
+
+.screen h2,
+.screen p
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+.screen p
+{
+    font-size: 15px;
+}
+
+.screen a
+{
+    color: aqua;
+}
+
+.start-game-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    width: 190px;
+    height: 100px;
+
+    font-size: 30px;
+    font-weight: 900;
+
+    background-color: beige;
+
+    text-transform: uppercase;
+}
